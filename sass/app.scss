@@ -1,0 +1,1258 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+@import "foundation/components/global"; // *always required
+@import "foundation/components/grid";
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3/";
+@import "fonts";
+
+// Use this grid if you want to start using the new Foundation 5 grid early.
+// It will change breakpoints to min-width: 640px and 1024px.
+//
+// @import "foundation/components/grid-5";
+
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms"; // *requires components/buttons
+// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups"; // *requires components/buttons
+// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
+// @import "foundation/components/split-buttons"; // *requires components/buttons
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";  // *requires components/grid
+// @import "foundation/components/orbit";
+@import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VARIABLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+//COLOR VARIABLES
+$background-color: #000;
+$header-background-color: #18478f;
+$background-dark: black;
+$footer-color: #406b8f;
+$share-color: #5cace2;
+$play-btn-color: #0465b1;
+$initiative-block-bg-color: #102a63;
+$initiative-expand-cta: #298ad6;
+$initiative-row-bg: #102a63;
+$initiative-row-text-color: #cbe0f9;
+$initiative-expand-text-color: #235a9f;
+$initiative-expand-bg-color: #e1e3e8;
+$initiative-facts-border: #b7ccdf;
+$footer-background-color: #050519;
+
+
+//FONT VARIABLES
+$default-font-size: 18px;
+$font-family-default: OpenSans, Helvetica, Arial, sans-serif;
+$font-family-light: OpenSans-Light, Helvetica, Arial, sans-serif;
+$font-family-bold: OpenSans-Bold, Helvetica, Arial, sans-serif;
+$font-family-footer: Arial, sans-serif;
+
+//IMAGE VARIABLES
+$body-metrics-block-image: url(../images/initiative-bg/block-body-metrics.jpg);
+$institute-for-learning-block-image: url(../images/initiative-bg/block-institute-for-learning.jpg);
+$tech-studio-block-image: url(../images/initiative-bg/block-tech-studio.jpg);
+$innovations-in-health-block-image: url(../images/initiative-bg/block-innovations-in-health.jpg);
+$sustainable-planets-block-image: url(../images/initiative-bg/block-sustainable-planets.jpg);
+$diy-genetics-block-image: url(../images/initiative-bg/block-diy-genetics.jpg);
+$cyber-security-block-image: url(../images/initiative-bg/block-cyber-security.jpg);
+$imax-block-image: url(../images/initiative-bg/block-imax.jpg);
+$center-for-tech-block-image: url(../images/initiative-bg/block-center-for-tech.jpg);
+
+$body-metrics-row-image: url(../images/initiative-bg/row-body-metrics.jpg);
+$institute-for-learning-row-image: url(../images/initiative-bg/row-institute-for-learning.jpg);
+$tech-studio-row-image: url(../images/initiative-bg/row-tech-studio.jpg);
+$innovations-in-health-row-image: url(../images/initiative-bg/row-innovations-in-health.jpg);
+$sustainable-planets-row-image: url(../images/initiative-bg/row-sustainable-planets.jpg);
+$diy-genetics-row-image: url(../images/initiative-bg/row-diy-genetics.jpg);
+$cyber-security-row-image: url(../images/initiative-bg/row-cyber-security.jpg);
+$imax-row-image: url(../images/initiative-bg/row-imax.jpg);
+$center-for-tech-row-image: url(../images/initiative-bg/row-center-for-tech.jpg);
+
+
+* {
+	box-sizing: border-box;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MODERNIZER STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+html {
+	&.ie9 {
+		#header {
+			& .logo-holder {
+				padding-top: 35px;
+			}
+			& .tagline {
+				padding-top: 40px;
+			}
+		}
+	}
+	&.lt-ie9 {
+		width: 1024px;
+		margin: 0 auto;
+		#video-row {
+			& .play-btn {
+				border: none;
+				background: none;
+				background-image: url(../images/play-btn-fallback.png) !important;
+			}
+			&:hover {
+				cursor: pointer;
+				& .play-btn {
+					border: none !important;
+					background: none !important;
+					background-image: url(../images/play-btn-hover-fallback.png) !important;
+				}
+			}
+		}
+		#initiatives .initiative {
+			&.i-block {
+				& a span.icon-unique, a:hover span.caption {
+					display: block;
+				}
+				& a span.caption, a:hover span.icon-unique {
+					display: none;
+				}
+			}
+		}
+		.welcome {
+			& a h2 span {
+				display: none;
+				top: 5px;
+			}
+			& a:hover h2 span {
+				display: inline-block;
+			}
+		}
+		#footer {
+			& .social, & .address, & .footer-contact, & .copyright {
+				text-align: center;
+				width: 100%;
+				margin: 0 auto;
+			}
+			& .social {
+				margin-top: 2em;
+				margin-bottom: 1em;
+			}
+
+		}
+	}
+	&.no-touch {
+		#header .tagline ul.nav li a:hover {
+			border-bottom: 1px solid rgba(255,255,255,1);
+			padding-bottom: .35em;
+		}
+		#video-row:hover {
+			cursor: pointer;
+			& .play-btn {
+				background-color: #000;
+				background-color: rgba(#000, .15);
+				border-color: #fff;
+				border-color: rgba(#fff, 1);
+				& span.play-icon {
+					@include animation(play-icon-nudge 1s linear);
+				}
+			}
+		}
+		#footer {
+			& a:hover {
+				color: #fff;
+			}
+			& .social ul li a:hover {
+				color: white;
+			}
+		}
+		#initiatives .initiative {
+			& a:hover {
+				background-repeat: no-repeat;
+				@include background-size( 110% 110% );
+			}
+			&.i-block {
+				&:hover {
+					& span.caption {
+						opacity: 1;
+						@include transition-delay( opacity 1.25s );
+					}
+					& span.icon-unique {
+						opacity: 0;
+						top: 170px;
+					}
+					& span.arrow-icon {
+						right: 15px;
+					}
+				}
+				 &.blank, &.blank:hover {
+					background: darken($header-background-color, 3%);
+				}
+			}
+			&.i-row .anchor a {
+				&:hover {
+					@include background-size( 105% auto );
+					& span {
+						margin-right: 35px;
+					}
+				}
+			}
+			& .initiative-expand {
+				& a:hover {
+					color: $share-color;
+				}
+				& a.primary-cta {
+					&:hover span {
+						right: -30px;
+					}
+				}
+			}
+			&#body-metrics {
+				&.i-block a:hover {
+					background-image: $body-metrics-block-image;
+				}
+				&.i-row a:hover {
+					background-image: $body-metrics-row-image;
+				}
+			}
+			&#cyber-security {
+				&.i-block a:hover {
+					background-image: $cyber-security-block-image;
+				}
+				&.i-row a:hover {
+					background-image: $cyber-security-row-image;
+				}
+			}
+			&#sustainable-planets {
+				&.i-block a:hover {
+					background-image: $sustainable-planets-block-image;
+				}
+				&.i-row a:hover {
+					background-image: $sustainable-planets-row-image;
+				}
+			}
+			&#tech-studio {
+				&.i-block a:hover {
+					background-image: $tech-studio-block-image;
+				}
+				&.i-row a:hover {
+					background-image: $tech-studio-row-image;
+				}
+			}
+			&#innovations-in-health {
+				&.i-block a:hover {
+					background-image: $innovations-in-health-block-image;
+				}
+				&.i-row a:hover {
+					background-image: $innovations-in-health-row-image;
+				}
+			}
+			&#diy-genetics {
+				&.i-block a:hover {
+					background-image: $diy-genetics-block-image;
+				}
+				&.i-row a:hover {
+					background-image: $diy-genetics-row-image;
+				}
+			}
+			&#institute-for-learning {
+				&.i-block a:hover {
+					background-image: $institute-for-learning-block-image;
+				}
+				&.i-row a:hover {
+					background-image: $institute-for-learning-row-image;
+				}
+			}
+			&#imax {
+				&.i-block a:hover {
+					background-image: $imax-block-image;
+				}
+				&.i-row a:hover {
+					background-image: $imax-row-image;
+				}
+			}
+			&#center-for-tech {
+				&.i-block a:hover {
+					background-image: $center-for-tech-block-image;
+				}
+				&.i-row a:hover {
+					background-image: $center-for-tech-row-image;
+				}
+			}
+		}
+		& .welcome {
+			& a h2:hover {
+				padding-bottom: 1em;
+				border-bottom: 1px solid #fff;
+				border-bottom: 1px solid rgba(#fff,0);
+				& span {
+					margin-left: 25px;
+					opacity: 1;
+				}
+			}
+		}
+		.modal-style {
+			& form input[type="submit"]:hover {
+				background-color: darken($share-color, 20%);
+			}
+		}
+	}
+	&.svgclippaths {
+		#initiatives {
+			&.offset-up .initiatives-grid, & .initiative.i-row .initiative-expand {
+				-webkit-clip-path: polygon(0% 0%, 0% 100%, 100.00% 100%, 100% 0%, 55.5% 0%, 50% 44px, 44.5% 0%);
+				@media screen and (max-width: 1024px) {
+				   -webkit-clip-path: polygon(0% 0%, 0% 100%, 100.00% 100%, 100% 0%, 57.5% 0%, 50% 44px, 42.5% 0%);
+				}
+				@media screen and (max-width: 570px) {
+				   -webkit-clip-path: polygon(0% 0%, 0% 100%, 100.00% 100%, 100% 0%, 62% 0%, 50% 30px, 38% 0%);
+				}
+			}
+		}
+	}
+	&.multiplebgs {
+		@media screen and (max-width: 768px) {
+			#content {
+				background: url(../images/darken-for-small-tile.png) repeat, url(../images/bg-image.jpg) no-repeat center -50px;
+			}
+		}
+	}
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GENERIC STYLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+body {
+	background-color: $background-color;
+	font-family: $font-family-default;
+	font-size: $default-font-size;
+	font-weight: normal;
+	color: white;
+}
+
+p {
+	line-height: 1.75;
+	letter-spacing: .1em;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	color: white;
+}
+
+h1, h3 {
+	font-family: $font-family-light;
+	font-weight: 100;
+}
+
+h1 {
+	font-size: 2.88em;
+	letter-spacing: .15em;
+}
+
+h2 {
+	font-size: 1.33em;
+	font-family: $font-family-default;
+	font-weight: normal;
+	letter-spacing: .1em;
+	display: inline-block;
+}
+
+h3 {
+	font-size: 1.15em;
+	letter-spacing: .1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+#header {
+	background-color: $header-background-color;
+	min-height: 6.89em;
+	padding: 0 2em;
+	& .logo-holder {
+		float: left;
+		padding-top: 40px;
+		& .logo {
+			width: 176px;
+			height: 44px;
+			display: block;
+			background-size: contain;
+		}
+	}
+	& .tagline {		
+		text-align:right;
+		float: right;
+		padding-top: 40px;
+		& h1 {
+			font-size: 1.33em;
+		}
+		& ul.nav {
+			width: 100%;
+			text-align: center;
+			& li {
+				font-size: .9em;
+				display: inline;
+				margin-right: 20px;
+				&:last-child {
+					margin-right: 0;
+				}
+				& a {
+					font-family: $font-family-light;
+					font-weight: 100;
+					letter-spacing: .08em;
+					color: white;
+					border-bottom: 1px solid rgba(255,255,255,0);
+					padding-bottom: 0;
+					@include transition(border-bottom .25s, padding-bottom .25s);
+				}
+			}
+		}
+	}
+}
+
+#video-row {
+	position: relative;
+	background: transparent;
+	& img {
+		max-width: 100%;
+		height: auto;
+	}
+	& .play-btn {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 80px;
+		width: 80px;
+		overflow: hidden;
+		@include border-radius(50%);
+		background-color: $play-btn-color;
+		background-color: rgba($play-btn-color, .8);
+		border: 2px solid $play-btn-color;
+		border: 2px solid rgba($play-btn-color,.8);
+		@include transition( background-color .5s, border-color .5s );
+		& span.play-icon {
+			position: absolute;
+			text-align: center;
+			top: 28%;
+			bottom: 0;
+			left: 6.25%;
+			right: 0;
+			margin: auto;
+			font-family: icomoon;
+			font-size: 1.8em;
+			font-weight: 100;
+			@include text-shadow(0 0 10px white);
+		}
+	}
+}
+
+#content {
+	background: url(../images/bg-image.jpg) no-repeat center -50px;
+	background-size: cover;
+	height: 762px;
+	padding: 3em 2em 0;
+	text-align: center;
+}
+
+#footer {
+	background-color: $footer-background-color;
+	min-height: 200px;
+	padding: 1.8em 2.2em;
+	font-size: .66em;
+	color: $footer-color;
+	& p {
+		letter-spacing: .05em;
+	}
+	& a {
+		color: $footer-color;
+		font-size: inherit;
+		display: block;
+		@include transition( color 0.35s );
+	}
+	& .social {
+		text-align: right;
+		& ul {
+			display: inline;
+			& li {
+				display: inline-block;
+				margin-right: 15px;
+				&:last-child {
+					margin-right: 0;
+				}
+				& a {
+					color: $share-color;
+					font-family: icomoon;
+					font-size: 1.6em;
+					font-weight: 100;
+					&.insta {
+						font-size: 1.75em;
+					}
+				}
+			}
+		}
+	}
+}
+
+#initiatives {
+	background: transparent;
+	text-align: center;
+	&.solid-bg {
+		background-color: $header-background-color;
+	}
+	& .initiatives-grid {
+		background-image: url(../images/grid-bg-tile.jpg);
+	}
+	&.offset-up {
+		margin-top: -180px;
+		text-align: center;
+		& .initiatives-grid {
+			display: block;
+			background-color: $background-dark;	
+		}
+	}
+	& .initiative {
+		& a {
+			height: 100%;
+			display: block;
+			@include background-size( 100% 100% );
+			background-position: 50% 50%;
+			@include transition( background-size .75s ease-out);
+		}
+		& span {
+			color: white;
+		}
+		&.i-block {
+			position: relative;
+			background-color: $initiative-block-bg-color;
+			height: 394px;
+			float: left;
+			width: 20%;
+			@include transition(width .35s, height .35s);
+			border-right: 1px solid black;
+			border-bottom: 1px solid black;
+			overflow: hidden;
+			& a {
+				display: block;
+				& h3.title {
+					letter-spacing: .05em;
+					position: absolute;
+					width: 80%;
+					left: 10%;
+					bottom: 58%;
+					line-height: 1.1;
+					@include transition(bottom .35s);
+				}
+				& span.icon-unique {
+					position: absolute;
+					top: 190px;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					opacity: 1;
+					height: 59px;
+					width: 59px;
+					@include transition( opacity 0.25s, top 0.25s );
+				}
+				& span.caption {
+					position: absolute;
+					top: 172px;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					font-size: .833em;
+					width: 65%;
+					line-height: 1.5;
+					opacity: 0;
+					@include transition( opacity 0.25s );
+				}
+				& span.arrow-icon {
+					position: absolute;
+					top: 50%;
+					bottom: 50%;
+					right: -20px;
+					font-family: icomoon;
+					font-size: .6em;
+					font-weight: 100;
+					@include transition( right 0.25s ease-out );
+				}
+			}
+		}
+		&.i-row {
+			margin-bottom: .5em !important;
+			background-color: $initiative-row-bg;
+			float: clear;
+			& .anchor {
+				height: 112px;
+				& a {
+					color: $initiative-row-text-color;
+					height: 100%;
+					display: block;
+					padding-top: 6px;
+					@include background-size( 100% auto );
+					& span {
+						position: relative;
+						margin-right: 20px;
+						font-family: icomoon;
+						font-size: .6em;
+						font-weight: 100;
+						color: inherit;
+						top: -3px;
+						display: inline-block;
+						@include transition( transform 0.1s cubic-bezier(.66,-0.21,.49,1.21), margin-right .25s );
+					}
+					& h2 {
+						display:inline;
+						font-family: $font-family-light;
+						font-weight: 100;
+						font-size: 1.22em;
+						color: inherit;
+						letter-spacing: 1px;
+						border: none;
+						& span {
+							font-family: inherit;
+							font-size: inherit;
+							color: inherit;
+							padding: inherit;
+							letter-spacing: inherit;
+							top: 0;
+						}
+					}
+					& span.icon-unique {
+						top: 18px;
+						opacity: 1;
+						height: 59px;
+						width: 59px;
+					}
+				}
+			}
+			&.active {
+				& .anchor {
+					height: 160px;
+					& a {
+						background-position: 50% 54.4%;
+						@include background-size( 105% auto );
+						& span {
+							@include rotate(90deg);
+							margin-right: 35px;
+							&.no-rotate {
+								@include rotate(0deg);
+							}
+						}
+						& h2:before {
+							margin-right: 35px;
+						}
+					}
+				}
+				& .initiative-expand {
+					display: block;
+				}
+			}
+			& .initiative-expand {
+				display: none;
+				//	top: -900px; @include transition( top 0.25s );
+				position: relative;
+				background-color: $initiative-expand-bg-color;
+				color: black;
+				margin-top: -44px;
+				padding: 3.5em 2em 3em;
+				text-align: left;
+				& .expand-container {
+					max-width: 55em;
+					margin: 0 auto;
+				}
+				& img {
+					margin-top: 2.7em;
+					margin-bottom: 2em;
+				}
+				& .body-copy {
+					padding-right: 2em;
+				}
+				& h2 {
+					margin: 0 0 .25em 0;
+					font-size: 1.5em;
+					color: $initiative-expand-text-color;
+					letter-spacing: .02em;
+				}
+				& p {
+					font-family: $font-family-light;
+					font-weight: 100;
+					line-height: 1.62;
+				}
+				& a {
+					color: $initiative-expand-cta;
+					text-decoration: underline;
+					@include transition( color 0.25s );
+					&.download {
+						background: transparent !important;
+					}
+				}
+				& .initiative-facts {
+					text-align: center;
+					width: 95%;
+					border-top: 1px solid $initiative-facts-border;
+					border-bottom: 1px solid $initiative-facts-border;
+					padding: .8em 0;
+					margin-bottom: 1em;
+					& h2 {
+						margin-bottom: .12em;
+						display: block;
+						font-size: 1.25em;
+						& span {
+							color: black;
+							text-transform: initial;
+						}
+					}
+				}
+				& a.primary-cta {
+					background: none !important;
+					text-align: center;
+					text-transform: uppercase;
+					font-family: $font-family-light;
+					font-weight: 100;
+					font-size: 1.35em;
+					width: 90%;
+					letter-spacing: .05em;
+					text-decoration: none;
+					& span {
+						position: relative;
+						display: inline-block;
+						color: inherit;
+						top: -2px;
+						right: -15px;
+						margin: auto;
+						font-family: icomoon;
+						font-size: .5em;
+						font-weight: 100;
+						@include transition( right 0.25s ease-out);
+					}
+				}
+			}
+		}
+		&#body-metrics {
+			&.active a {
+				background-image: $body-metrics-row-image;
+			}
+		}
+		&#cyber-security {
+			&.active a {
+				background-image: $cyber-security-row-image;
+			}
+		}
+		&#sustainable-planets {
+			&.active a {
+				background-image: $sustainable-planets-row-image;
+			}
+		}
+		&#tech-studio {
+			&.active a {
+				background-image: $tech-studio-row-image;
+			}
+		}
+		&#innovations-in-health {
+			&.active a {
+				background-image: $innovations-in-health-row-image;
+			}
+		}
+		&#diy-genetics {
+			&.active a {
+				background-image: $diy-genetics-row-image;
+			}
+		}
+		&#institute-for-learning {
+			&.active a {
+				background-image: $institute-for-learning-row-image;
+			}
+		}
+		&#imax {
+			&.active a {
+				background-image: $imax-row-image;
+			}
+		}
+		&#center-for-tech {
+			&.active a {
+				background-image: $center-for-tech-row-image;
+			}
+		}
+	}
+}
+
+.welcome {
+	& p {
+		max-width: 46em;
+		margin: 0 auto 2em;
+	}
+	& a h2 {
+		position: relative;
+		border-bottom: 1px solid #fff;
+		padding-bottom: .5em;
+		@include transition( border-bottom 0.35s ease-out, padding-bottom 0.35s ease-out );
+		& span {
+			display: inline-block;
+			position: absolute;
+			top: 10px;
+			opacity: 0;
+			font-family: icomoon;
+			font-size: .5em;
+			font-weight: 100;
+			margin-left: 10px;
+			@include transition( margin-left 0.35s ease-out, opacity 0.35s );
+		}
+	}
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MODAL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.modal-style {
+	font-family: $font-family-default;
+	color: black;
+	@include border-radius(15px);
+	text-align: center;
+	padding: 3em;
+	top: 50px;
+	min-height: 550px;
+	& #form-holder {
+		height: 466px;
+	}
+	& h2 {
+		color: $header-background-color;
+		font-family: $font-family-light;
+	}
+	& p {
+		max-width: 30em;
+		margin: 0 auto;
+		letter-spacing: inherit;
+		&.info {
+			margin: 1em 0;
+		}
+	}
+	& a.tel {
+		overflow: visible;
+		margin-left: 5px;
+		&:before {
+			font-family: icomoon;
+			font-weight: 100;
+			content: "\e602";
+			position: relative;
+			top: 3px;
+			margin-right: 5px;
+		}
+	}
+	& > div:first-child {
+		margin-bottom: 1em;
+	}
+	& form input, textarea {
+		@include border-radius(10px);
+		border: 1px solid #d1d1d1;
+		background-color: #f0f0f0;
+		&[type="submit"] {
+			background-color: $share-color;
+			color: white;
+			width: 200px;
+			height: 45px;
+			border: none;
+			@include transition( background-color .25s );
+		}
+	}
+	& form input.error {
+		border-color: red;
+		background-color: #e5bdbd;
+		margin-bottom: 1em;
+		color: red;
+		@include transition ( color .25s, background-color .25s, border-color .25s );
+		&::-webkit-input-placeholder {
+			color: red;
+		}
+		&:-moz-placeholder {
+			color: red;
+		}
+		&::-moz-placeholder {
+			color: red;
+		}
+		&:-ms-input-placeholder {
+			color: red;
+		}
+	}
+	& form textarea {
+		height: 200px;
+	}
+	& .thank-you {
+		padding: 7.5em 1.5em 0;
+		margin: 0 auto;
+		height: 90%;
+		width: 80%;
+		border: 1px solid #c2c2c2;
+		background-color: whitesmoke;
+		@include border-radius(15px);
+		& h2 span {
+			font-family: icomoon;
+			font-size: .8em;
+			font-weight: 100;
+			margin-right: .3em;
+		}
+	}
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ANIMATIONS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+@include keyframes(play-icon-nudge) {
+	0%		{ left: 6.25%; top:28%; }
+	23%		{ left: 212.5%; top:28%; }
+	23.5%	{ left: 212.5%; top:-150%; }
+	24%		{ left: -212.5%; top: -150%; }
+	24.5%	{ left: -212.5%; top:28%; }
+	35%		{ left: 6.25%; top: 28%; }
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media only screen and (max-width: 1100px) {
+	#header .tagline ul.nav {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	p {
+		font-size: .77em;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1em;
+	}
+	.welcome {
+		& a h2 span {
+			top: 7px;
+			opacity: 1;
+		}
+	}
+	#initiatives {
+		& .initiative.i-block {
+			width: 25%;
+		}
+	}
+	#footer p {
+		&.pad-right {
+			padding-right: 2.5em;
+		}
+		& a {
+			font-size: inherit;
+		}
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	#content {
+		padding: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#initiatives {
+		& .initiative {
+			&.i-block {
+				width: 33.33%;
+				height: 215px;
+				& a {
+					& h3.title {
+						font-size: .9em;
+						bottom: 55%;
+					}
+					&:hover {
+						& span.caption {
+							display: none;
+						}
+						& span.icon-unique {
+							opacity: 1;		//	don't need fallback because IE8 won't get breakpoint
+							top: 110px;
+						}
+						& span.arrow-icon {
+							display: none;
+						}
+					}
+					& span.icon-unique {
+						top: 110px;
+						opacity: 1;		//	don't need fallback because IE8 won't get breakpoint
+						//height: 40px;
+						//width: 40px;
+					}
+					& span.caption {
+						display: none;
+					}
+					& span.arrow-icon {
+						display: none;
+					}
+				}
+			}
+			&.i-row {
+				text-align: left;
+				& .anchor {
+					height: 85px;
+					& a {
+						padding: 0;
+						& span {
+							display: none;
+							&.icon-unique {
+								display: inline-block;
+								top: 12px;
+								margin-left: 2em;
+							}
+						}
+						& h2 {
+							position: relative;
+							top: -9px;
+							font-size: 1em;
+							display: inline-block;
+							padding-top: 0;
+							@include transform-origin(center center);
+							margin: 0;
+							& span {
+								padding: 0;
+							}
+						}
+					}
+				}
+				&.active {
+					& .anchor {
+						height: 125px;
+						& a {
+							background-position: 50% 66.4%;
+							& span {
+								margin-right: 20px;
+							}
+						}
+					}
+					& .initiative-expand {
+						margin-top: -42px;
+					}
+				}
+				& .initiative-expand {
+					padding: 3em 1.5em 2em;
+					& img {
+						margin: 0 !important;
+					}
+					& .body-copy {
+						padding: 0 !important;
+					}
+					& h2 {
+						font-size: 1.25em;
+					}
+					& p {
+						font-size: .8em;
+					}
+					& .initiative-facts {
+						width: 100% !important;
+						margin-top: 1em;
+						& h2 {
+							font-size: 1em;
+						}
+					}
+					& a.download {
+						margin-bottom: 1.5em;
+						font-size: .9em;
+					}
+					& a.primary-cta {
+						font-size: 1em;
+						margin-top: .5em;
+						margin-bottom: 1em;
+						width: 100%;
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+	#footer {
+		text-align: center;
+		padding: 1.5em;
+		& p {
+			font-size: .85em;
+			margin: 0 0 2em;
+			padding: 0;
+		}
+		& a {
+			font-size: inherit;
+			margin-bottom: .25em;
+		}
+		& .social {
+			text-align: center;
+			padding: 0;
+			margin-bottom: 1em;
+			
+		}
+	}
+	.modal-style {
+		min-height: 680px;
+	}
+}
+
+@media only screen and (max-width: 675px) {
+	#header {
+		min-height: 46px;
+		padding: .5em;
+		& .logo-holder {
+			max-width: 32%;
+			padding: .75em 0;
+		}
+		& .tagline {
+			margin: 0;
+   			padding: 1.2em 0;
+   			width: 68%;
+   			& h1 {
+	   			font-size: 1em;
+	   			margin: 0;
+   			}
+		}
+	}
+	#content {
+		height: 630px;
+	}
+	#video-row {
+		& .play-btn {
+			height: 60px;
+			width: 60px;
+			& span.play-icon {
+				font-size: 1.3em;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	#header {
+		& .logo-holder {
+			padding-top: 1em;
+			& .logo {
+				width: 110px;
+				height: 28px;
+			}
+		}
+		& .tagline {
+			padding-top: 1.4em;
+			& h1 {
+				font-size: .7em;
+			}
+		}
+	}
+	#footer {
+		& .social {
+			& ul {
+				display: block;
+				padding: 0;
+				margin-top: .5em;
+				& li {
+					margin-right: 15px;
+					& a {
+						font-size: 1.15em;
+						&.insta {
+							font-size: 1.4em;
+						}
+					}
+				}
+			}
+		}
+	}
+	#initiatives {
+		& .initiative {
+			&.i-block {
+				& a {
+					margin-top: 0; // seems buggy that I have to do this
+					& h3.title {
+						font-size: .8em;
+						left: 0;
+						right: 0;
+						margin: 0 auto;
+						width: 100%;
+					}
+				}
+			}
+			&.i-row .anchor a {
+				font-size: .9em;
+				& span.icon-unique {
+					margin-right: 10px;
+				}
+				& .initiative-expand {
+					padding: 3em 1.5em;
+					& p {
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+	.modal-style {
+		padding: 1em;
+		width: 90%;
+		margin-left: -45%;
+		min-height: 650px;
+		& p.lead {
+			font-size: 1em;
+			margin-bottom: .5em;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]>				<html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if IE 9]>				<html class="no-js lt-ie10 ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- for Google -->
+	<meta name="description" content="The Tech Museum of Innovation." />
+	<meta name="keywords" content="The Tech, The Tech Museum, The Tech Museum of Innovation, tech, technology, innovation, awakening, potential, awakening potential, capital campaign, reinvented, initiative, Silicon Valley, California" />
+
+	<meta name="author" content="The Tech Museum of Innovation" />
+	<meta name="copyright" content="The Tech Museum of Innovation 2014 © All rights reserved. The Tech Museum of Innovation is a registered 501 (c)(3). Federal ID # 94-2864660" />
+	<meta name="application-name" content="" />
+
+	<!-- for Facebook -->          
+	<meta property="og:title" content="The Tech. Reinvented." />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="http://www.thetech.org/joinus/images/video-frame.jpg" />
+	<meta property="og:url" content="http://www.thetech.org/joinus" />
+	<meta property="og:description" content="In 2012, The Tech Museum of Innovation launched a five-year institutional transformation that is redefining the museum as a Silicon Valley resource for innovation. The Tech aims to do this by creating deep experiences that are open-ended, social, and collaborative. We need your help to make this vision a reality." />
+
+	<!-- for Twitter -->          
+	<meta name="twitter:card" content="The Tech. Reinvented." />
+	<meta name="twitter:title" content="The Tech. Reinvented." />
+	<meta name="twitter:description" content="In 2012, The Tech Museum of Innovation launched a five-year institutional transformation that is redefining the museum as a Silicon Valley resource for innovation. The Tech aims to do this by creating deep experiences that are open-ended, social, and collaborative. We need your help to make this vision a reality." />
+	<meta name="twitter:image" content="http://www.thetech.org/joinus/images/video-frame.jpg" />
+
+	<title>The Tech: Awakening Potential</title>
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+	<script src="javascripts/vendor/custom.modernizr.js"></script>
+	<script>
+			/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+			window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var r=t.document.createElement("link"),a=t.document.getElementsByTagName("script")[0];r.rel="stylesheet",r.href=e[o&&n?0:o?1:2],a.parentNode.insertBefore(r,a)},r=new t.Image;r.onerror=function(){o(!1)},r.onload=function(){o(1===r.width&&1===r.height)},r.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+			grunticon( [ "images/grunticon/icons.data.svg.css", "images/grunticon/icons.data.png.css", "images/grunticon/icons.fallback.css" ] );
+		</script>
+		<noscript><link href="images/grunticon/icons.fallback.css" rel="stylesheet"></noscript>
+	<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+</head>
+<body>
+
+	<div id="header" class="row">
+		<div class="logo-holder">
+			<a href="index.html"><span class="icon-logo logo"></span></a>
+		</div>
+		<div class="tagline">
+			<h1>Awakening Potential</h1>
+		</div>
+	</div>
+
+	<section id="initiatives" class="row solid-bg">
+
+		<div id="body-metrics" class="row initiative i-row">
+			<div class="large-12 columns anchor">
+				<a data-scroll href="#body-metrics">
+					<span>&#xe601;</span>
+					<span class="icon-unique icon-icon-body-metrics no-rotate"></span>
+					<h2>Body Metrics</h2>
+				</a>
+			</div>
+			<div class="large-12 columns">
+				<div class="initiative-expand">
+					<div class="expand-container row">
+						<div class="large-6 small-12 columns body-copy">
+							<h2>The Objective</h2>
+							<p>Body Metrics invites people to learn about their physical, social, and emotional health, and how these things are affected by environment, behavior, movement, and interactions with others. Visitors are outfitted with a sensor kit including three wearable devices — a customized iPod, a Somaxis muscle and heart sensor, and a NeuroSky EEG headset. Using these tools, they’ll be able to explore and manipulate their data streams, displayed on the iPod screen, while participating in activities within the Body Metrics exhibition and throughout the museum.</p>
+							<a href="files/Body-Metrics-11-11-14.docx" class="download">Download the whitepaper for more information</a>
+						</div>
+						<div class="large-6 small-12 columns">
+							<img src="images/content-image-body-metrics.jpg" alt="Body Metrics">
+							<div class="initiative-facts">
+								<h2>The Timeline: <span>Fall 2014</span></h2>
+								<h2>The Budget: <span>$3 million</span></h2>
+								<h2>Presenting Sponsor:<br><span>Kaiser Permanente</span></h2>
+								<h2>Technology Sponsor: <span>NetApp</span></h2>
+							</div>
+							<a href="#" class="primary-cta" data-reveal-id="contactModal">Get Involved Today<span>&#xe601;</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="cyber-security" class="row initiative i-row">
+			<div class="large-12 columns anchor">
+				<a data-scroll href="#cyber-security">
+					<span>&#xe601;</span>
+					<span class="icon-unique icon-icon-cyber-security no-rotate"></span>
+					<h2>Cyber Security</h2>
+				</a>
+			</div>
+			<div class="large-12 columns">
+				<div class="initiative-expand">
+					<div class="expand-container row">
+						<div class="large-6 small-12 columns body-copy">
+							<h2>The Objective</h2>
+							<p>Through hands-on activities, guests will develop the skills to live a fulfilling and safe digital life as well as learn what it takes to be a cyber-security professional. As they progress through the exhibition, visitors will learn about the dynamics and vulnerabilities of internet communications and how these can be exploited. In addition, they’ll acquire an understanding of managing their online information and innovative processes involved in securing data.</p>
+							<a href="files/Cyber-Security-11-11-14.docx" class="download">Download the whitepaper for more information</a>
+						</div>
+						<div class="large-6 small-12 columns">
+							<img src="images/content-image-cyber-security.jpg" alt="Cyber Security">
+							<div class="initiative-facts">
+								<h2>The Timeline: <span>Opening Spring 2015</span></h2>
+								<h2>The Budget: <span>$3 million</span></h2>
+								<h2>Presenting Sponsor:<br><span>Palo Alto Networks</span></h2>
+							</div>
+							<a href="#" class="primary-cta" data-reveal-id="contactModal">Get Involved Today<span>&#xe601;</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="sustainable-planets" class="row initiative i-row">
+			<div class="large-12 columns anchor">
+				<a data-scroll href="#sustainable-planets">
+					<span>&#xe601;</span>
+					<span class="icon-unique icon-icon-sustainable-planets no-rotate"></span>
+					<h2>Sustainable Planets</h2>
+				</a>
+			</div>
+			<div class="large-12 columns">
+				<div class="initiative-expand">
+					<div class="expand-container row">
+						<div class="large-6 small-12 columns body-copy">
+							<h2>The Objective</h2>
+							<p>Visitors will be challenged to determine how to live sustainably on Mars and in space. In so doing, they will discover how we can live more sustainably on Earth. Energy, food production, water conservation, and waste disposal are some of the vital areas explored in these three constrained environments.</p>
+						</div>
+						<div class="large-6 small-12 columns">
+							<img src="images/content-image-sustainable-planets.jpg" alt="Sustainable Planets">
+							<div class="initiative-facts">
+								<h2>The Timeline: <span>2016</span></h2>
+								<h2>The Budget: <span>$10 million</span></h2>
+							</div>
+							<a href="#" class="primary-cta" data-reveal-id="contactModal">Get Involved Today<span>&#xe601;</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="tech-studio" class="row initiative i-row">
+			<div class="large-12 columns anchor">
+				<a data-scroll href="#tech-studio">
+					<span>&#xe601;</span>
+					<span class="icon-unique icon-icon-tech-studio no-rotate"></span>
+					<h2>Tech Studio</h2>
+				</a>
+			</div>
+			<div class="large-12 columns">
+				<div class="initiative-expand">
+					<div class="expand-container row">
+						<div class="large-6 small-12 columns body-copy">
+							<h2>The Objective</h2>
+							<p>In a space designed to reflect Silicon Valley incubators, visitors engage in design challenges and maker activities, and our team builds and prototypes new exhibits. The Tech Studio is used by community partners for product demonstrations, workshops, and hack-a-thons. Here, we enable visitors to build what they can imagine, and partners to demonstrate what they have created.</p>
+						</div>
+						<div class="large-6 small-12 columns">
+							<img src="images/content-image-tech-studio.jpg" alt="Tech Studio">
+							<div class="initiative-facts">
+								<h2>The Timeline: <span>Open in beta</span></h2>
+								<h2>The Budget: <span>$3 million</span></h2>
+							</div>
+							<a href="#" class="primary-cta" data-reveal-id="contactModal">Get Involved Today<span>&#xe601;</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="innovations-in-health" class="row initiative i-row">
+			<div class="large-12 columns anchor">
+				<a data-scroll href="#innovations-in-health">
+					<span>&#xe601;</span>
+					<span class="icon-unique icon-icon-innovations-in-health no-rotate"></span>
+					<h2>Innovations in Health</h2>
+				</a>
+			</div>
+			<div class="large-12 columns">
+				<div class="initiative-expand">
+					<div class="expand-container row">
+						<div class="large-6 small-12 columns body-copy">
+							<h2>The Objective</h2>
+							<p>Thanks to medical innovations, life expectancies have been extended by a year every five years for the past three decades. New discoveries have revolutionized care for chronic and fatal diseases while reducing human suffering from countless conditions. Built on The Tech’s upper level, this exhibition will have a dual focus: on high-tech innovations as well as on ideas that serve high-need populations. It will include a mixture of hands-on experiences, multimedia content, and interactions with complex medical devices.</p>
+							<a href="files/Healthcare-Innovations-8-12-14.docx" class="download">Download the whitepaper for more information</a>
+						</div>
+						<div class="large-6 small-12 columns">
+							<img src="images/content-image-innovations-in-health.jpg" alt="Innovations in Health">
+							<div class="initiative-facts">
+								<h2>The Timeline: <span>2016</span></h2>
+								<h2>The Budget: <span>$2.5 million</span></h2>
+								<h2>Presenting Sponsor:<br><span>El Camino Hospital</span></h2>
+							</div>
+							<a href="#" class="primary-cta" data-reveal-id="contactModal">Get Involved Today<span>&#xe601;</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="diy-genetics" class="row initiative i-row">
+			<div class="large-12 columns anchor">
+				<a data-scroll href="#diy-genetics">
+					<span>&#xe601;</span>
+					<span class="icon-unique icon-icon-diy-genetics no-rotate"></span>
+					<h2>DIY Genetics</h2>
+				</a>
+			</div>
+			<div class="large-12 columns">
+				<div class="initiative-expand">
+					<div class="expand-container row">
+						<div class="large-6 small-12 columns body-copy">
+							<h2>The Objective</h2>
+							<p>In this updated version of our popular “Genetics with a Twist” exhibition, visitors will grow proteins, test ideas in simulations, and engage with researchers. They’ll explore multiple hands-on biology experiments surrounded by supplemental exhibits showcasing genetics solutions that save lives and make the world a better place.</p>
+							<a href="files/DIY-Genetics-8-12-14.docx" class="download">Download the whitepaper for more information</a>
+						</div>
+						<div class="large-6 small-12 columns">
+							<img src="images/content-image-diy-genetics.jpg" alt="DIY Genetics">
+							<div class="initiative-facts">
+								<h2>The Timeline: <span>Fall 2015</span></h2>
+								<h2>The Budget: <span>$3 million</span></h2>
+								<h2>$1 million <span>secured <br>from Brin Wojcicki Foundation</span></h2>
+							</div>
+							<a href="#" class="primary-cta" data-reveal-id="contactModal">Get Involved Today<span>&#xe601;</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="institute-for-learning" class="row initiative i-row">
+			<div class="large-12 columns anchor">
+				<a data-scroll href="#institute-for-learning">
+					<span>&#xe601;</span>
+					<span class="icon-unique icon-icon-institute-for-learning no-rotate"></span>
+					<h2>Institute for Learning</h2>
+				</a>
+			</div>
+			<div class="large-12 columns">
+				<div class="initiative-expand">
+					<div class="expand-container row">
+						<div class="large-6 small-12 columns body-copy">
+							<h2>The Objective</h2>
+							<p>With a focus on design-challenge learning — a combination of project-based learning, design thinking, and the engineering design process — the Institute for Learning will tackle our community’s most pressing educational challenges. It will make STEM learning more accessible to low-income students as a means of ending the cycle of poverty. It will increase STEM interest and pursuit among girls so that the developing technologies that shape our society will be more inclusive. It will help educators leverage effective educational technologies. And it will provide quality resources and training for educators who have never taught project-based learning or engineering design but need to meet the requirements of the Common Core State Standards and the Next Generation Science Standards.</p>
+						</div>
+						<div class="large-6 small-12 columns">
+							<img src="images/content-image-institute-for-learning.jpg" alt="Institute for Learning">
+							<div class="initiative-facts">
+								<h2>The Timeline: <span>Winter 2015</span></h2>
+								<h2>The Budget: <span>$6 million</span></h2>
+							</div>
+							<a href="#" class="primary-cta" data-reveal-id="contactModal">Get Involved Today<span>&#xe601;</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="imax" class="row initiative i-row">
+			<div class="large-12 columns anchor">
+				<a data-scroll href="#imax">
+					<span>&#xe601;</span>
+					<span class="icon-unique icon-icon-imax no-rotate"></span>
+					<h2>IMAX <span class="hide-for-small no-rotate"> dome theater</span></h2>
+				</a>
+			</div>
+			<div class="large-12 columns">
+				<div class="initiative-expand">
+					<div class="expand-container row">
+						<div class="large-6 small-12 columns body-copy">
+							<h2>The Objective</h2>
+							<p>The Tech will update its renowned giant-screen theater to a state-of-the art digital projection system to be used not just for movies but for educational purposes, broadcasts, music performances, product launches, gaming and much more.</p>
+						</div>
+						<div class="large-6 small-12 columns">
+							<img src="images/content-image-imax.jpg" alt="IMAX">
+							<!--div class="initiative-facts">
+								<h2>The Timeline: <span>TKTKTK</span></h2>
+								<h2>THE BUDGET: <span>TKTKTK</span></h2>
+							</div-->
+							<a href="#" class="primary-cta" data-reveal-id="contactModal">Get Involved Today<span>&#xe601;</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="row">
+		<div id="footer">
+			<div class="row">
+				<div class="columns large-3 medium-12 small-12 push-9 social">
+					<ul>
+						<li><a href="https://www.facebook.com/TheTechMuseum" target="_blank">&#xe60a;</a></li>
+						<li><a href="https://twitter.com/TheTechMuseum" target="_blank">&#xe60c;</a></li>
+						<li><a href="http://instagram.com/thetechmuseum" class="insta" target="_blank">&#xe603;</a></li>
+					</ul>
+				</div>
+				<div class="columns large-3 medium-6 small-12 push-1 address">
+					<p>The Tech Museum of Innovation<br>
+					201 South Market Street<br>
+					San Jose, CA 95113</p>
+				</div>
+				<div class="columns large-2 medium-6 small-12 push-1 footer-contact">
+					<p>
+						<a href="tel:4087956301" class="tel">408.795.6301 (office)</a>
+						<a href="mailto:mpappas@thetech.org">mpappas@thetech.org</a>
+					</p>
+				</div>
+				<div class="columns large-4 medium-12 small-12 pull-8 copyright">
+					<p class="pad-right">The Tech Museum of Innovation 2014 <br class="show-for-small">© All rights reserved.<br>
+					The Tech Museum of Innovation is a registered 501 (c)(3).<br>
+					Federal ID # 94-2864660</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contactModal" class="reveal-modal modal-style row">
+		<div class="large-5 medium-12 small-12 columns">
+			<h2>Let's talk.</h2>
+			<p>We’d love to talk to you about how to get involved with our campaign to remake The Tech.</p>
+			<p class="info">Call Maria Pappas, Vice President of Development,<br>at <a href="tel:4087956301" class="tel">408.795.6301</a> (office).</p>
+		</div>
+		<hr class="show-for-small">
+		<div class="large-7 medium-12 small-12 columns">
+			<div id="form-holder">
+				<p>Or we will call you</p>
+				<form>
+					<div class="row">
+						<div class="large-8 large-centered columns">
+							<!--label>Your Name</label-->
+							<input type="text" name="name" placeholder="Your Name">
+						</div>
+						<div class="large-8 large-centered columns">
+							<!--label>Your Email Address</label-->
+							<input type="email" name="email" placeholder="Your Email Address">
+							
+						</div>
+						<div class="large-8 large-centered columns">
+							<!--label>Your Phone Number</label-->
+							<input type="tel" name="phone" placeholder="Your Phone Number">
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-8 large-centered columns">
+							<!--label>Message (optional)</label-->
+							<textarea name="message" placeholder="Message (optional)"></textarea>
+						</div>
+					</div>
+					<input id="formsubmit" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+	<script src="javascripts/jquery.js"></script>
+
+  	<script src="javascripts/foundation/foundation.js"></script>
+	
+	<script src="javascripts/foundation/foundation.abide.js"></script>
+	
+	<script src="javascripts/foundation/foundation.alerts.js"></script>
+	
+	<script src="javascripts/foundation/foundation.clearing.js"></script>
+	
+	<script src="javascripts/foundation/foundation.cookie.js"></script>
+	
+	<script src="javascripts/foundation/foundation.forms.js"></script>
+
+	<script src="javascripts/foundation/foundation.placeholder.js"></script>
+	
+	<script src="javascripts/foundation/foundation.reveal.js"></script>
+	
+	<script src="javascripts/foundation/foundation.section.js"></script>
+
+	<script src="javascripts/smooth-scroll.js"></script>
+	
+	<script src="javascripts/email-script.js"></script>
+  
+  <script>
+    $(document).foundation();
+     smoothScroll.init();
+  </script>
+
+  <script>
+  	var $loc = window.location.href; // returns the full URL
+  	if ($loc.indexOf("#") > -1) {
+		var $target = $loc.substring($loc.lastIndexOf("#"), $loc.length);
+		var $activeID = document.getElementById($target);
+		$($target).addClass('active');
+	}
+
+	var $parent = $('.initiative.i-row');
+	var $anchor = $('.initiative.i-row .anchor a');
+	$anchor.on("click", function(e){
+		e.preventDefault(); // prevents hash snap from occuring, so smooth scroll occurs
+		var $el = $(this).closest('.initiative.i-row');
+		$parent.not($el).removeClass('active');
+		if ($el.hasClass('active') !== true) {
+			$el.addClass('active');
+		} else {
+			$el.removeClass('active');
+		}
+	});
+  </script>
+
+</body>
+</html>

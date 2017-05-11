@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>The Tech: Awakening Potential</title>
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+	<script src="javascripts/vendor/custom.modernizr.js"></script>
+	<script>
+			/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+			window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var r=t.document.createElement("link"),a=t.document.getElementsByTagName("script")[0];r.rel="stylesheet",r.href=e[o&&n?0:o?1:2],a.parentNode.insertBefore(r,a)},r=new t.Image;r.onerror=function(){o(!1)},r.onload=function(){o(1===r.width&&1===r.height)},r.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+			grunticon( [ "/images/grunticon/icons.data.svg.css", "/images/grunticon/icons.data.png.css", "/images/grunticon/icons.fallback.css" ] );
+		</script>
+		<noscript><link href="icons.fallback.css" rel="stylesheet"></noscript>
+</head>
+<body>
+
+	<div id="header" class="row">
+		<div class="logo-holder">
+			<a href="index.html"><img src="images/SVG/logo.svg" class="logo" alt="The Tech Museum of Innovation"></a>
+		</div>
+		<div class="tagline">
+			<h1>Awakening Potential</h1>
+		</div>
+	</div>
+
+	<!--div class="row"-->
+		<div id="video-row">
+			<iframe src='//player.vimeo.com/video/108792063' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<!-- SCRIPT IS REPLACING THIS EMBED WITH IMAGE POSTER, THEN CLICK SWAPS BACK TO VIDEO -->
+		</div>
+	<!--/div-->
+
+
+	<section id="content" class="row">
+		<div class="large-12 large-centered columns">
+			<h1>The Tech. Reinvented.</h1>
+		</div>
+		<div class="large-12 large-centered columns welcome">
+			<p>In 2012, The Tech Museum of Innovation launched a five-year institutional transformation that is redefining the museum as a Silicon Valley resource for innovation. The Tech aims to do this by creating deep experiences that are open-ended, social, and collaborative. We need your help to make this vision a reality.</p>
+			<a href="#" data-reveal-id="contactModal"><h2>Get involved today<span>&#xe601;</span></h2></a>
+		</div>
+	</section>
+
+	<section id="initiatives" class="large-12 large-centered columns offset-up">
+		<h1>Our Initiatives</h1>
+		<div class="initiatives-grid clearfix">
+
+			<div id="body-metrics" class="initiative i-block">
+				<a href="initiatives.html#body-metrics">
+					<h3 class="title">Body<br class="show-for-small"> Metrics</h3>
+					<span class="icon-unique icon-icon-body-metrics"></span>
+					<span class="caption">Exploring the digital you.</span>
+					<span class="arrow-icon">&#xe601;</span>
+				</a>
+			</div>
+			<div id="cyber-security" class="initiative i-block">
+				<a href="initiatives.html#cyber-security">
+					<h3 class="title">Cyber<br class="show-for-small"> Security</h3>
+					<span class="icon-unique icon-icon-cyber-security"></span>
+					<span class="caption">Learning to protect what’s private in the digital age.</span>
+					<span class="arrow-icon">&#xe601;</span>
+				</a>
+			</div>
+			<div id="sustainable-planets" class="initiative i-block">
+				<a href="initiatives.html#sustainable-planets">
+					<h3 class="title">Sustainable<br class="show-for-small"> Planets</h3>
+					<span class="icon-unique icon-icon-sustainable-planets"></span>
+					<span class="caption">Helping visitors understand how to live within constraints.</span>
+					<span class="arrow-icon">&#xe601;</span>
+				</a>
+			</div>
+			<div id="tech-studio" class="initiative i-block">
+				<a href="initiatives.html#tech-studio">
+					<h3 class="title">Tech<br class="show-for-small"> Studio</h3>
+					<span class="icon-unique icon-icon-tech-studio"></span>
+					<span class="caption">Providing the tools to enable innovation.</span>
+					<span class="arrow-icon">&#xe601;</span>
+				</a>
+			</div>
+			<div id="health-innovations" class="initiative i-block">
+				<a href="initiatives.html#health-innovations">
+					<h3 class="title">Health<br class="show-for-small"> Innovations</h3>
+					<span class="icon-unique icon-icon-health-innovations"></span>
+					<span class="caption">Showcasing the future of healthcare.</span>
+					<span class="arrow-icon">&#xe601;</span>
+				</a>
+			</div>
+			<div id="diy-genetics" class="initiative i-block">
+				<a href="initiatives.html#diy-genetics">
+					<h3 class="title">DIY Genetics</h3>
+					<span class="icon-unique icon-icon-diy-genetics"></span>
+					<span class="caption">Engaging visitors in an authentic genetic engineering experience.</span>
+					<span class="arrow-icon">&#xe601;</span>
+				</a>
+			</div>
+			<div id="center-for-learning" class="initiative i-block">
+				<a href="initiatives.html#center-for-learning">
+					<h3 class="title">Learning<br class="show-for-small"> with Technology</h3>
+					<span class="icon-unique icon-icon-center-for-learning"></span>
+					<span class="caption">Equipping young people — especially the underserved — to succeed in a technology-driven economy.</span>
+					<span class="arrow-icon">&#xe601;</span>
+				</a>
+			</div>
+			<div id="imax" class="initiative i-block">
+				<a href="initiatives.html#imax">
+					<h3 class="title">IMAX Hackworth dome theater</h3>
+					<span class="icon-unique"></span>
+					<span class="caption">Creating wonder in our signature giant-screen theater.</span>
+					<span class="arrow-icon">&#xe601;</span>
+				</a>
+			</div>
+			<!--div class="initiative i-block blank">
+				<h3 class="title">Coming Soon</h3>
+			</div-->
+		</div>
+	</section>
+
+	<div class="row">
+		<div id="footer">
+			<div class="row">
+				<div class="columns large-3 medium-12 small-12 push-9 social">
+					<h1>Share</h1>
+					<ul>
+						<li><a href="#">&#xe60a;</a></li>
+						<li><a href="#">&#xe60c;</a></li>
+						<li><a href="#">&#xe60b;</a></li>
+					</ul>
+				</div>
+				<div class="columns large-3 medium-6 small-8 push-1">
+					<p>The Tech Museum of Innovation<br>
+					201 South Market Street<br>
+					San Jose, CA 95113</p>
+				</div>
+				<div class="columns large-2 medium-6 small-4 push-1">
+					<p>
+						<a href="#">1-408-294-8324</a>
+						<a href="mailto:info@thetech.org">info@thetech.org</a>
+					</p>
+				</div>
+				<div class="columns large-4 medium-12 small-12 pull-8">
+					<p>The Tech Museum of Innovation 2014 © All rights reserved.<br>
+					The Tech Museum of Innovation is a registered 501 (c)(3).<br>
+					Federal ID # 94-2864660</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contactModal" class="reveal-modal modal-style row">
+		<div class="large-4 medium-12 small-12 columns">
+			<h2>Let's chat</h2>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+			<p>Call us at <a href="tel:1111234567" class="tel">(111) 123-4567</a></p>
+		</div>
+		<hr class="show-for-small">
+		<div class="large-8 medium-12 small-12 columns">
+			<p>Or we will call you</p>
+			<form>
+				<div class="row">
+					<div class="large-8 large-centered columns">
+						<!--label>Your Name</label-->
+						<input type="text" name="name" placeholder="Your Name">
+					</div>
+					<div class="large-8 large-centered columns">
+						<!--label>Your Email Address</label-->
+						<input type="text" name="email" placeholder="Your Email Address">
+					</div>
+					<div class="large-8 large-centered columns">
+						<!--label>Your Phone Number</label-->
+						<input type="text" name="phone" placeholder="Your Phone Number">
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-8 large-centered columns">
+						<!--label>Message (optional)</label-->
+						<textarea name="message" placeholder="Message (optional)"></textarea>
+					</div>
+				</div>
+				<input id="formsubmit" type="submit" value="Submit">
+			</form>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="javascripts/foundation/foundation.js"></script>
+	
+	<script src="javascripts/foundation/foundation.abide.js"></script>
+	
+	<script src="javascripts/foundation/foundation.alerts.js"></script>
+	
+	<script src="javascripts/foundation/foundation.clearing.js"></script>
+	
+	<script src="javascripts/foundation/foundation.cookie.js"></script>
+	
+	<script src="javascripts/foundation/foundation.dropdown.js"></script>
+	
+	<script src="javascripts/foundation/foundation.forms.js"></script>
+	
+	<script src="javascripts/foundation/foundation.interchange.js"></script>
+	
+	<script src="javascripts/foundation/foundation.joyride.js"></script>
+	
+	<script src="javascripts/foundation/foundation.magellan.js"></script>
+	
+	<script src="javascripts/foundation/foundation.orbit.js"></script>
+	
+	<script src="javascripts/foundation/foundation.placeholder.js"></script>
+	
+	<script src="javascripts/foundation/foundation.reveal.js"></script>
+	
+	<script src="javascripts/foundation/foundation.section.js"></script>
+	
+	<script src="javascripts/foundation/foundation.tooltips.js"></script>
+	
+	<script src="javascripts/foundation/foundation.topbar.js"></script>
+  
+	<script>
+    	$(document).foundation();
+    </script>
+
+	<script>
+		var $videoEmbed = "<iframe src='//player.vimeo.com/video/108792063' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>";
+
+	  	var $imagePoster = "<img src='images/video-frame.jpg' alt='Steve Young video frame' onclick='videoSwap()'>" + "<div class='play-btn'  onclick='videoSwap()'>" + "<span class='play-icon'>&#xe600;</span>" + "</div>";
+
+		document.getElementById("video-row").innerHTML = $imagePoster;
+
+		function videoSwap() {
+	    	document.getElementById("video-row").innerHTML = "";
+	    	document.getElementById("video-row").innerHTML = $videoEmbed;
+	    	$("#video-row").fitVids();
+		}
+	</script>
+
+	<script src="javascripts/jquery.js"></script>
+	<script src="javascripts/FitVids.js-master/jquery.fitvids.js"></script>
+
+	<script>
+
+		function IsEmail(email) {
+			var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			return regex.test(email);
+		}
+		$('form').on('click', '#formsubmit', function(event) {
+			event.preventDefault();
+
+			// validate array. If anything inside after check, form errors
+			var invalid = [];
+
+			// validate fields
+			var el_name = $('form').find('input[name="name"]');
+			var val_name = el_name.val();
+			var valid_name = val_name.length;
+				el_name.toggleClass('val-error', !valid_name);
+				!valid_name && invalid.push(1);
+				// console.log( val_name );
+
+			var el_email = $('form').find('input[name="email"]');
+			var val_email = el_email.val();
+			var valid_email = val_email.length && IsEmail(val_email);
+				el_email.toggleClass('val-error', !valid_email);
+				!valid_email && invalid.push(1);
+				// console.log( val_email );
+			
+			var el_phone = $('form').find('input[name="phone"]');
+			var val_phone = el_email.val();
+			var valid_phone = val_phone.length; // could use phone number validation
+				el_phone.toggleClass('val-error', !valid_phone);
+				!valid_phone && invalid.push(1);
+				// console.log( val_email );
+
+
+			// if any invalid, halt
+			if (invalid.length) { return; }
+
+
+			// build object
+			var formData = {};
+				formData.email 			= $('input[name="email"]').val();
+				formData.name 			= $('input[name="name"]').val();
+				formData.phone 			= $('input[name="phone"]').val();
+				formData.message 		= $('textarea[name="message"]').val();
+
+			$.ajax({
+				url: '/mail.php',
+				type: 'POST',
+				data: $.param(formData),
+			})
+			.done(function(e,b,c) {
+				if (e === 'success') {
+					// perform some sort of happy dance
+				} else {
+					// cry in a corner
+				}
+			});
+		});
+
+	</script>
+
+
+
+	<!--svg version="1.1" id="grid-clip-path" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 45.8 33.6" enable-background="new 0 0 45.8 33.6" xml:space="preserve">
+<circle cx="23.4" cy="16.5" r="10.5"/>
+</svg-->
+  
+</body>
+</html>
